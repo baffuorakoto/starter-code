@@ -1,0 +1,210 @@
+@font-face {
+  font-family: Fraunces;
+  src: url(/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--type-main);
+}
+:root {
+  --dark-purple: #24053e;
+  --eucaplyptus: #44ffa1;
+  --davys-grey: #584d62;
+  --white: #fff;
+  --ghost-white: #fcf8ff;
+
+  /* Typography */
+  --type-main: manrope;
+  --type-secondary: Fraunces;
+}
+.main-inner {
+  background-color: var(--ghost-white);
+  clip-path: ellipse(170% 100% at 50% 0);
+  position: relative;
+}
+.hero-section {
+  background-color: var(--dark-purple);
+  height: 45vh;
+  clip-path: ellipse(170% 100% at 50% 0);
+  position: relative;
+  margin-bottom: 178px;
+}
+.container {
+  padding: 3.2rem 1.5rem;
+}
+.header {
+}
+.header-list {
+  list-style: none;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  border-bottom: 3px solid var(--eucaplyptus);
+}
+.pattern-ring-one,
+.pattern-ring-two {
+  display: none;
+}
+
+.hero {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 64px;
+  color: var(--white);
+  font-family: var(--type-secondary);
+}
+.hero span {
+  border-bottom: 2px solid var(--eucaplyptus);
+  font-family: var(--type-secondary);
+}
+.button {
+  background-color: var(--eucaplyptus);
+  color: var(--color-primary);
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button .button-cta {
+}
+.image-hero-container {
+  /* width: 90%; */
+  width: 80%;
+  transform: translate(15%, 0%);
+  position: absolute;
+  /* top: 0; */
+  margin-top: -280px;
+  /* margin: 64px auto ; */
+}
+.image-hero-container img {
+  width: 100%;
+}
+
+.content-main {
+  background-color: var(--ghost-white);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 40px 96px;
+  }
+  .pattern-ring-one {
+    display: block;
+    position: absolute;
+    left: -220px;
+  }
+
+  .pattern-ring-two {
+    display: block;
+    position: absolute;
+    right: -90px;
+    bottom: 130px;
+  }
+  .hero h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    margin-top: 64px;
+    color: var(--white);
+    font-family: var(--type-secondary);
+  }
+  .image-hero-container {
+    /* width: 90%; */
+    width: 67%;
+    /* transform: translate(35%, -12%); */
+    /* position: absolute; */
+    /* top: 0; */
+    /* margin-top: -280px; */
+    /* margin: 64px auto ; */
+
+    /* Tried version */
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+/* @media screen and (min-width: 1024px) {
+  .hero-section {
+    height: 40vh;
+  }
+  .container {
+    padding: 40px 96px;
+  }
+  .hero h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    margin-top: 64px;
+    color: var(--white);
+    font-family: var(--type-secondary);
+  }
+  .image-hero-container {
+    /* width: 90%; */
+    /* width: 53.4%; */
+    /* transform: translate(35%, -12%); */
+    /* position: absolute; */
+    /* top: 0; */
+    /* margin-top: -280px; */
+    /* margin: 64px auto ; */
+
+    /* Tried version */
+    /* position: absolute; */
+    /* bottom: 140px; */
+    /* left: 50%; */
+    /* transform: translate(-50%, 0); */
+  /* } */
+/* } */
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    height: 70vh;
+  }
+  .container {
+    padding: 40px 203px;
+  }
+
+  .pattern-ring-one {
+    left: -130px;
+  }
+
+  .pattern-ring-two {
+    right: -70px;
+    bottom: 110px;
+  }
+  .hero h1 {
+    font-size: 105px;
+    /* font-size: 105px; */
+    margin-bottom: 20px;
+    margin-top: 64px;
+    color: var(--white);
+    font-family: var(--type-secondary);
+  }
+  .image-hero-container {
+    /* width: 90%; */
+    width: 53.4%;
+    /* transform: translate(35%, -12%); */
+    /* position: absolute; */
+    /* top: 0; */
+    /* margin-top: -280px; */
+    /* margin: 64px auto ; */
+
+    /* Tried version */
+
+    bottom: -10px;
+  }
+}
